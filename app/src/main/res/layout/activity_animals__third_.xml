@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_animals"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.esraa.kidsworld.Animals_Third_Activity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Level1"
+        android:text="LEVEL1"
+        android:textSize="20sp"
+        android:textColor="#F442A4"
+        android:background="#ffffff"
+        android:textStyle="normal|bold"
+        android:layout_weight="1"
+        android:textAlignment="center"
+        android:layout_alignBaseline="@+id/Back"
+        android:layout_alignBottom="@+id/Back"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:src="@drawable/panda"
+        android:id="@+id/pandaImage"
+        android:layout_height="380dp"
+        android:layout_width="300dp"
+        android:layout_marginTop="175dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+    <ImageButton
+        android:id="@+id/menu"
+        android:src="@drawable/menu"
+        android:onClick="menu"
+        android:layout_height="100dp"
+        android:layout_width="100dp"
+        android:background="#ffffff"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/arrowBack" />
+    <ImageButton
+        android:id="@+id/arrowNext"
+        android:layout_height="50dp"
+        android:src="@drawable/arrow"
+        android:layout_width="70dp"
+        android:onClick="next"
+        android:layout_alignTop="@+id/pandaImage"
+        android:layout_toEndOf="@+id/pandaImage"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="159dp" />
+
+    <ImageButton
+        android:id="@+id/arrowBack"
+        android:layout_height="50dp"
+        android:src="@drawable/arrowback"
+        android:layout_width="70dp"
+        android:onClick="back"
+        android:layout_alignTop="@+id/arrowNext"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="35dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Text"
+        android:text="Identify below animal"
+        android:textColor="#F442A4"
+        android:textStyle="normal|bold"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/options"
+        android:text="Options"
+        android:textColor="#F442A4"
+        android:textSize="20sp"
+        android:textStyle="normal|bold"
+        android:layout_above="@+id/panda"
+        android:layout_alignStart="@+id/Level1" />
+
+    <Button
+        android:id="@+id/dolphin"
+        android:layout_height="wrap_content"
+        android:text="dolphin"
+        android:background="#F442A4"
+        android:textColor="#ffffff"
+        android:textStyle="normal|bold"
+        android:textSize="20sp"
+        android:onClick="wrong"
+        android:layout_width="140dp"
+        android:layout_alignBaseline="@+id/panda"
+        android:layout_alignBottom="@+id/panda"
+        android:layout_alignEnd="@+id/pandaImage" />
+
+    <Button
+        android:id="@+id/panda"
+        android:layout_height="wrap_content"
+        android:text="panda"
+        android:background="#F442A4"
+        android:textColor="#ffffff"
+        android:textStyle="normal|bold"
+        android:textSize="20sp"
+        android:onClick="correct"
+        android:layout_width="140dp"
+        android:layout_marginTop="26dp"
+        android:layout_below="@+id/pandaImage"
+        android:layout_alignStart="@+id/pandaImage" />
+
+    <Button
+        android:id="@+id/cat"
+        android:layout_height="wrap_content"
+        android:text="cat"
+        android:background="#F442A4"
+        android:textColor="#ffffff"
+        android:textStyle="normal|bold"
+        android:textSize="20sp"
+        android:onClick="wrong"
+        android:layout_width="140dp"
+        android:layout_below="@+id/panda"
+        android:layout_alignStart="@+id/dolphin"
+        android:layout_marginTop="33dp" />
+
+    <Button
+        android:id="@+id/dog"
+        android:layout_height="wrap_content"
+        android:text="dog"
+        android:background="#F442A4"
+        android:textColor="#ffffff"
+        android:textStyle="normal|bold"
+        android:textSize="20sp"
+        android:onClick="wrong"
+        android:layout_width="140dp"
+        android:layout_alignBaseline="@+id/cat"
+        android:layout_alignBottom="@+id/cat"
+        android:layout_alignStart="@+id/panda" />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="3"
+        android:rating="2"
+        android:layout_below="@+id/Level1"
+        android:layout_centerHorizontal="true"
+        android:isIndicator="true" />
+
+</RelativeLayout>
+

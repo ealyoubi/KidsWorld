@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">My Application</string>
+
+    <!-- Title for the application. [CHAR LIMIT=12] -->
+
+    <!-- Category name for phrases [CHAR LIMIT=20] -->
+    <string name="category_Relationships">Relationships</string>
+
+    <!-- Category name for the vocabulary words for colors [CHAR LIMIT=20] -->
+    <string name="category_colors">Colors</string>
+
+    <!-- Category name for the vocabulary words for numbers [CHAR LIMIT=20] -->
+    <string name="category_numbers">Numbers</string>
+
+    <!-- Category name for the vocabulary words for family members [CHAR LIMIT=20] -->
+    <string name="category_Alphabets">Alphabets</string>
+    <string name="category_Shaps">Shapes</string>
+    <string name="category_Counting">Counting</string>
+    <string name="category_Objects">Objects</string>
+    <string name="category_Animals">Animals</string>
+    <string name="category_BodyParts">BodyParts</string>
+    <string name="category_Drawing">Drawing</string>
+</resources>
